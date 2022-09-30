@@ -19,20 +19,20 @@ Team Circle offers a social SDK which is fully customizable and easy to integrat
 * **Circle** 
 This is the core community function which Team Cricle SDK provides within your app. App users can make new posts, browse, comment, like, and collect other users’ posts. Please find more information about the introduction of Circle at [Circle in-app community](https://www.teamcircle.io/document/Team_Circle_iOS_Android_Social_SDK_Introduction?target=Circle_in-app_community).
 
-![guide1 bb3f6089](https://user-images.githubusercontent.com/114135053/192727471-e96837fe-8fa5-43dd-a30f-9bf82c07d392.png)
+<img src="https://user-images.githubusercontent.com/114135053/192727471-e96837fe-8fa5-43dd-a30f-9bf82c07d392.png" width="50%">
 
 * **Store**
 If you subscribed to the Premium Plan, the built-in store function is enabled in your SDK. The store banner appears at the top of customer’s social feed page. Your customer can also tag store products when making a new prost. Please find out more info about the UI & UX of the store section here [Store](https://www.teamcircle.io/document/Team_Circle_iOS_SDK_Integration_Guide?target=Store). You can [manage products and categories](https://www.teamcircle.io/document/Team_Circle_Admin_Dashboard_Feature_Introduction?target=Manage_store) in the store via Admin Dashboard. If you already have an existing eCommerce section in your app and still wish to utilize Team Circle Customer Posts Bar to funnel UGC to your product listings, we also offer [a module that can be integrated into your own app pages outside the Circle](https://www.teamcircle.io/document/Team_Circle_iOS_SDK_Integration_Guide?target=Store).
 
-![guide2 d3ae7fe5](https://user-images.githubusercontent.com/114135053/192728188-dd3a80a1-7e8c-480f-a526-fb6f378ed664.png)
+<img src="https://user-images.githubusercontent.com/114135053/192728188-dd3a80a1-7e8c-480f-a526-fb6f378ed664.png" width="50%">
 
 * **Instant messaging** Customers can chat with others individually using our IM system. We currently support sending text messages, voice messages, photos, videos. An admin can also [link the admin account with a Circle community account](https://www.teamcircle.io/document/Team_Circle_Admin_Dashboard_Feature_Introduction?target=Link_unlink_accounts). After linking, an “official staff” badge will appear next to the Circle account. Please find more information about details of the IM system here [Instant Messaging](https://www.teamcircle.io/document/Team_Circle_iOS_Android_Social_SDK_Introduction?target=Instant_messaging).
 
-![guide3 7d7b6b12](https://user-images.githubusercontent.com/114135053/192732545-e686d10f-bd3c-4c70-a7eb-ab1b3f7475d0.png)
+<img src="https://user-images.githubusercontent.com/114135053/192732545-e686d10f-bd3c-4c70-a7eb-ab1b3f7475d0.png" width="50%">
 
 * **Customizable UI** Circle SDK offers customizable UI components so that you can fine tune the Circle to match the style of the rest of your app. First of all, you may switch between two different themes: Light Theme or Dark Theme. Then, all buttons, text, icons, and click effects can be customized. Please find more information about details of the Customizable UI here [Customizable UI](https://www.teamcircle.io/document/Team_Circle_iOS_Android_Social_SDK_Introduction?target=Customizable_UI).
 
-![guide4 328e0f73](https://user-images.githubusercontent.com/114135053/192732951-bbefef0a-d617-46a9-81f5-24c171a3ef0d.png)
+<img src="https://user-images.githubusercontent.com/114135053/192732951-bbefef0a-d617-46a9-81f5-24c171a3ef0d.png" width="50%">
 
 # Integration
 ## Get started
@@ -66,12 +66,12 @@ pod 'AWSS3'
 ### Step 2 Xcode Settings
 In Xcode, go to [Build Setting] > [Architectures] > [Excluded Architectures] > Add armv7
 
-![guide5 9deac41b](https://user-images.githubusercontent.com/114135053/192769661-03750b1b-cee4-4349-aff4-5f14626060f4.png)
+<img src="https://user-images.githubusercontent.com/114135053/192769661-03750b1b-cee4-4349-aff4-5f14626060f4.png" width="50%">
 
 ### Step 3 Xcode Add Framework and Bundle
 Drag Team CircleSDK.framework and Team CircleSDK.bundle into your project, and do the following as the below image shows:
 
-![guide6 621b4f16](https://user-images.githubusercontent.com/114135053/192769856-92cfce4a-65dd-45f0-a139-81d656e18dfc.png)
+<img src="https://user-images.githubusercontent.com/114135053/192769856-92cfce4a-65dd-45f0-a139-81d656e18dfc.png" width="50%">
 
 ### Step 4 Xcode Add Privacy Permission Description
 Add the following lines into info.plist:
@@ -319,7 +319,7 @@ Sometimes an app might have its own unique content that it wishes users can shar
 * A fitness app can enable users to share their customized training program while posting stunning results.
 * An IoT lighting app can enable users to share the customized holiday light animation programs while showing off the end results.
 
-![image11 9679afee](https://user-images.githubusercontent.com/114135053/192987251-42b59af8-1ddc-4540-867b-811b32fcb1a9.png)
+<img src="https://user-images.githubusercontent.com/114135053/192987251-42b59af8-1ddc-4540-867b-811b32fcb1a9.png" width="30%">
 
 In the above example of XKchrome app (for an IoT lighting hardware), the customers can share a light theme built by themselves along with their posts for others to download and run.
 
@@ -529,25 +529,34 @@ TCManager.sharedInstance.setProductDescColor(color: UIColor.white)
 
 ## Icons
 * **Method:** setIconFavorite <br> **Description:** Set icon for favorite-unselected.
-![image16 8cae8f96](https://user-images.githubusercontent.com/114135053/192996408-9eba8a8a-f169-4634-9e5e-f913a4295a01.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207595-31fc189d-cfd0-4545-bf08-a921e70e5ec8.png" width="40%">
+
 * **Method:** setIconFavoriteSelected <br> **Description:** Set icon for favorite-selected.
-![image10 ffc81413](https://user-images.githubusercontent.com/114135053/192996551-10058c03-8dd1-4268-82a4-039cea42f869.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207820-e7bc98ee-f689-4b05-8b2e-16f145320ffe.png" width="40%">
+
 * **Method:** setIconTag <br> **Description:** Set icon for tag-unselected.
-![image2 c4af5e88](https://user-images.githubusercontent.com/114135053/192996704-ad3b4e4c-8506-4e47-8efe-3f5e160323da.png)
+<img src="https://user-images.githubusercontent.com/114135053/193208162-34169299-6d0b-4ce7-aa81-6f66e044eb0b.png" width="40%">
+
 * **Method:** setIconTagSelected <br> **Description:** Set icon for tag-selected.
-![image1 b2d5b515](https://user-images.githubusercontent.com/114135053/192996867-c5c5340f-c8d6-4337-a634-e51068d78260.png)
+<img src="https://user-images.githubusercontent.com/114135053/193208063-acba5fd5-e175-419f-9c0a-2359b933eed4.png" width="40%">
+
 * **Method:** setIconLike <br> **Description:** Set icon for like-unselected.
-![image12 cd5e7e37](https://user-images.githubusercontent.com/114135053/192997022-48055c47-3d16-4db2-98cf-14846f261b39.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207743-8ce0c13a-fdd0-4a29-abab-40f8c0aa7294.png" width="40%">
+
 * **Method:** setIconLikeSelected <br> **Description:** Set icon for like-selected.
-![image15 7eec9438](https://user-images.githubusercontent.com/114135053/192997177-108954c5-060e-4067-a9b2-9582d024c6d9.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207089-aa46975e-e9a5-4912-8a2e-0a74fa0b5df0.png" width="40%">
+
 * **Method:** setIconShare <br> **Description:** Set icon for share post.
-![image3 4b194751](https://user-images.githubusercontent.com/114135053/192997300-46f640b8-9a16-4ae3-8ec0-4f26312a6237.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207304-96a4cb64-df41-457b-8cf2-fb6a70055c2a.png" width="40%">
+
 * **Method:** setIconComment <br> **Description:** Set icon for making comments.
-![image4 d07a6052](https://user-images.githubusercontent.com/114135053/192997502-bc18f81e-6e5d-44e0-b8fa-1a55d89af922.png)
+<img srchttps://user-images.githubusercontent.com/114135053/193208233-6ca58d96-f7a2-4be9-b314-1548975cce4f.png" width="40%">
+
 * **Method:** setIconNewPost <br> **Description:** Set icon for creating a new post.
-![image7 2be42b25](https://user-images.githubusercontent.com/114135053/192997603-68751f5a-544d-44a6-8d31-255b06ab0bde.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207459-4f27af98-21d5-434b-a06b-b6b55b953e69.png" width="40%">
+
 * **Method:** setIconBack <br> **Description:** Set icon for all back buttons.
-![image8 f5bca772](https://user-images.githubusercontent.com/114135053/192997717-89c82cd6-0fda-4e79-9baf-ad341828d4c9.png)
+<img src="https://user-images.githubusercontent.com/114135053/193207889-fac83ce6-6499-4fd9-adf4-1b4e8c5fc1b4.png" width="40%">
 
 Sample Code:
 ```bash
@@ -565,11 +574,13 @@ TCManager.sharedInstance.setIconBack(icon: UIImage(named: "icon"))
 ## Colors
 
 * **Method:** setSystemBackgroundColor <br> **Description:** Set the background color of all pages.
-![image5 9516cc55](https://user-images.githubusercontent.com/114135053/192998082-93f4eb97-3582-451a-86cf-3381340e22a9.png)
+<img src="https://user-images.githubusercontent.com/114135053/192998082-93f4eb97-3582-451a-86cf-3381340e22a9.png" width="50%">
+
 * **Method:** setBackgroundEffectColor <br> **Description:** Set the background color of the highlighted section.
-![image13 4ef70d79](https://user-images.githubusercontent.com/114135053/192998234-79f3e83a-1d75-497f-aea8-8316884e9dcb.png)
+<img src="https://user-images.githubusercontent.com/114135053/192998234-79f3e83a-1d75-497f-aea8-8316884e9dcb.png" width="30%">
+
 * **Method:** setLinkColor <br> **Description:** Set all web page link color.
-![image11 694cd78d](https://user-images.githubusercontent.com/114135053/192998363-b97d4841-52a9-4a7c-976d-e2cf0828cd66.png)
+<img src="https://user-images.githubusercontent.com/114135053/192998363-b97d4841-52a9-4a7c-976d-e2cf0828cd66.png" width="30%">
 
 Sample Code:
 ```bash
@@ -581,10 +592,15 @@ TCManager.sharedInstance.setLinkColor(color: UIColor.blue)
 ## Redirect
 
 * **Method:** toStoreVCtrl <br> **Description:** Redirects to the Store view controller.
+
 * **Method:** toUserCenterVCtrl <br> **Description:** Redirects to the UserCenter view controller.
+
 * **Method:** toNewPostVCtrl <br> **Description:** Redirects to the NewPost view controller.
+
 * **Method:** toSearchVCtrl <br> **Description:** Redirects to the Search view controller.
+
 * **Method:** toChatListAction <br> **Description:** Redirects to the Chat view controller.
+
 * **Method:** toChatAction <br> **Description:** Redirects to the Chat view controller.
 
 Sample Code:
@@ -606,6 +622,7 @@ TCManager.sharedInstance.toChatAction(nav: navigation, conversationId: "conversa
 ## Terms and privacy policy
 
 * **Method:** setPrivacyPolicy <br> **Description:** Set privacy policy website url.
+
 * **Method:** setTermsAndConditions <br> **Description:** Set terms and conditions website url.
 
 Sample Code:
