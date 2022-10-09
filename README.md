@@ -191,6 +191,29 @@ There are two types of messages received by the server, Circle messages and IM o
 | callbackType | String | Message type:<br>NOTIFICATION: Circle messages;<br>MESSAGE: IM offline messages. |
 | callbackData | List<Object> | Data list |
 | sign | String | Encryption rules: appKey + callbackData encrypt with MD5 |
+  
+**Signature sample:**
+When you receive notification data as follows: 
+```bash
+{
+  "callbackType": "NOTIFICATION",
+  "callbackData": [{
+    "notificationType": "FOLLOW",
+    "ownerId": "1",
+    "accountId": "2",
+    "accountName": "Maria",
+    "notificationTime": "1661394887563",
+    "unreadNum": 11
+  }],
+  "sign": "e850231501b44e95fea1c8058b11fe3e"
+}
+```
+Suppose your appKey is apmhwgc3, then you need to concatenate the appKey and the received notification data with a semicolon as follows:
+```bash
+apmhwgc3;[{"notificationType":"FOLLOW","ownerId":"1","accountId":"2","accountName":"Maria","notificationTime":1661394887563,"unreadNum":11}]
+```
+Finally, encrypt the spliced string above by MD5, and you can get the final encrypted string: **e850231501b44e95fea1c8058b11fe3e**.
+
 
 CallbackData params of NOTIFICATION:
 | **Param** | **Type** | **Description** |
