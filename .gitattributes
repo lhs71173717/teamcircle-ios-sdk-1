@@ -1,1 +1,2 @@
 HyphenateChat.framework filter=lfs diff=lfs merge=lfs -text
+HyphenateChat filter=lfs diff=lfs merge=lfs -text
