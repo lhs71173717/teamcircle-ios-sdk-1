@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		405F3024AE28386FCA372FF9 /* Pods_TCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75248D6F26503181244E0A0 /* Pods_TCDemo.framework */; };
+		F116ECAB29261603003BE4E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECAA29261603003BE4E3 /* AppDelegate.swift */; };
+		F116ECAD29261603003BE4E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECAC29261603003BE4E3 /* SceneDelegate.swift */; };
+		F116ECAF29261603003BE4E3 /* TMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECAE29261603003BE4E3 /* TMainController.swift */; };
+		F116ECB229261603003BE4E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F116ECB029261603003BE4E3 /* Main.storyboard */; };
+		F116ECB429261605003BE4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F116ECB329261605003BE4E3 /* Assets.xcassets */; };
+		F116ECB729261605003BE4E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F116ECB529261605003BE4E3 /* LaunchScreen.storyboard */; };
+		F116ECC129262A78003BE4E3 /* TShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECC029262A78003BE4E3 /* TShadowView.swift */; };
+		F116ECC329263D38003BE4E3 /* TBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECC229263D38003BE4E3 /* TBaseController.swift */; };
+		F116ECC529263EE9003BE4E3 /* TCircleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECC429263EE9003BE4E3 /* TCircleListController.swift */; };
+		F1699497293A0CF600F65B9E /* TeamCircleSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1699495293A0CF600F65B9E /* TeamCircleSDK.bundle */; };
+		F1699499293AE1D000F65B9E /* TLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1699498293AE1D000F65B9E /* TLoginController.swift */; };
+		F16994A6293D8B0600F65B9E /* TRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994A4293D8B0600F65B9E /* TRequest.swift */; };
+		F16994A7293D8B0600F65B9E /* TRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994A5293D8B0600F65B9E /* TRoute.swift */; };
+		F16994A9293D90B000F65B9E /* TDataRequest+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994A8293D90B000F65B9E /* TDataRequest+Decodable.swift */; };
+		F16994AB293D914B00F65B9E /* TUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994AA293D914B00F65B9E /* TUserModel.swift */; };
+		F16994AD293DC60300F65B9E /* TCodextended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994AC293DC60300F65B9E /* TCodextended.swift */; };
+		F16994AF293DCCAA00F65B9E /* TAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994AE293DCCAA00F65B9E /* TAppManager.swift */; };
+		F16994B1293DCE3C00F65B9E /* TFileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994B0293DCE3C00F65B9E /* TFileManager+Extensions.swift */; };
+		F16994B3293DDA4F00F65B9E /* TCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994B2293DDA4F00F65B9E /* TCommon.swift */; };
+		F16994B5293F560600F65B9E /* TeamCircleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16994B4293F560600F65B9E /* TeamCircleSDK.framework */; };
+		F1DE79CD29288B5900A3A016 /* TCircleTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79CC29288B5900A3A016 /* TCircleTypeController.swift */; };
+		F1DE79D12928902300A3A016 /* TCircleTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D02928902300A3A016 /* TCircleTabController.swift */; };
+		F1DE79D32928930900A3A016 /* TFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D22928930900A3A016 /* TFeedController.swift */; };
+		F1DE79D52928B82400A3A016 /* TModuleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D42928B82400A3A016 /* TModuleController.swift */; };
+		F1DE79D72928D2EF00A3A016 /* TCustomSamplesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D62928D2EF00A3A016 /* TCustomSamplesController.swift */; };
+		F1DE79DA2928DA9F00A3A016 /* TCustomSamplesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D92928DA9F00A3A016 /* TCustomSamplesModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DC13EB24BC2D4F3C66ECD1D /* Pods-TCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDemo.release.xcconfig"; path = "Target Support Files/Pods-TCDemo/Pods-TCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		66F248223274408E1BF0960C /* Pods-TCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDemo.debug.xcconfig"; path = "Target Support Files/Pods-TCDemo/Pods-TCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D75248D6F26503181244E0A0 /* Pods_TCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F116ECA729261603003BE4E3 /* TCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F116ECAA29261603003BE4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F116ECAC29261603003BE4E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F116ECAE29261603003BE4E3 /* TMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMainController.swift; sourceTree = "<group>"; };
+		F116ECB129261603003BE4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F116ECB329261605003BE4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F116ECB629261605003BE4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F116ECB829261605003BE4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F116ECC029262A78003BE4E3 /* TShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TShadowView.swift; sourceTree = "<group>"; };
+		F116ECC229263D38003BE4E3 /* TBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBaseController.swift; sourceTree = "<group>"; };
+		F116ECC429263EE9003BE4E3 /* TCircleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCircleListController.swift; sourceTree = "<group>"; };
+		F1699495293A0CF600F65B9E /* TeamCircleSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeamCircleSDK.bundle; sourceTree = "<group>"; };
+		F1699498293AE1D000F65B9E /* TLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLoginController.swift; sourceTree = "<group>"; };
+		F16994A4293D8B0600F65B9E /* TRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRequest.swift; sourceTree = "<group>"; };
+		F16994A5293D8B0600F65B9E /* TRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRoute.swift; sourceTree = "<group>"; };
+		F16994A8293D90B000F65B9E /* TDataRequest+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TDataRequest+Decodable.swift"; sourceTree = "<group>"; };
+		F16994AA293D914B00F65B9E /* TUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUserModel.swift; sourceTree = "<group>"; };
+		F16994AC293DC60300F65B9E /* TCodextended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCodextended.swift; sourceTree = "<group>"; };
+		F16994AE293DCCAA00F65B9E /* TAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAppManager.swift; sourceTree = "<group>"; };
+		F16994B0293DCE3C00F65B9E /* TFileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TFileManager+Extensions.swift"; sourceTree = "<group>"; };
+		F16994B2293DDA4F00F65B9E /* TCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCommon.swift; sourceTree = "<group>"; };
+		F16994B4293F560600F65B9E /* TeamCircleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TeamCircleSDK.framework; sourceTree = "<group>"; };
+		F1DE79CC29288B5900A3A016 /* TCircleTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCircleTypeController.swift; sourceTree = "<group>"; };
+		F1DE79D02928902300A3A016 /* TCircleTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCircleTabController.swift; sourceTree = "<group>"; };
+		F1DE79D22928930900A3A016 /* TFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeedController.swift; sourceTree = "<group>"; };
+		F1DE79D42928B82400A3A016 /* TModuleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TModuleController.swift; sourceTree = "<group>"; };
+		F1DE79D62928D2EF00A3A016 /* TCustomSamplesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCustomSamplesController.swift; sourceTree = "<group>"; };
+		F1DE79D92928DA9F00A3A016 /* TCustomSamplesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCustomSamplesModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F116ECA429261603003BE4E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16994B5293F560600F65B9E /* TeamCircleSDK.framework in Frameworks */,
+				405F3024AE28386FCA372FF9 /* Pods_TCDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FEFCD9C9C9FFD9FF5360223 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66F248223274408E1BF0960C /* Pods-TCDemo.debug.xcconfig */,
+				5DC13EB24BC2D4F3C66ECD1D /* Pods-TCDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F116EC9E29261602003BE4E3 = {
+			isa = PBXGroup;
+			children = (
+				F116ECA929261603003BE4E3 /* TCDemo */,
+				F116ECA829261603003BE4E3 /* Products */,
+				3FEFCD9C9C9FFD9FF5360223 /* Pods */,
+				F579874A059B3AAB3123D1CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F116ECA829261603003BE4E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F116ECA729261603003BE4E3 /* TCDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F116ECA929261603003BE4E3 /* TCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F116ECAA29261603003BE4E3 /* AppDelegate.swift */,
+				F116ECAC29261603003BE4E3 /* SceneDelegate.swift */,
+				F1DE79C72928868600A3A016 /* SDK */,
+				F116ECBF29262A34003BE4E3 /* Controllers */,
+				F116ECBE29262A26003BE4E3 /* Views */,
+				F1DE79D82928D53A00A3A016 /* Models */,
+				F169949A293D898900F65B9E /* Other */,
+				F116ECB029261603003BE4E3 /* Main.storyboard */,
+				F116ECB329261605003BE4E3 /* Assets.xcassets */,
+				F116ECB529261605003BE4E3 /* LaunchScreen.storyboard */,
+				F116ECB829261605003BE4E3 /* Info.plist */,
+			);
+			path = TCDemo;
+			sourceTree = "<group>";
+		};
+		F116ECBE29262A26003BE4E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F116ECC029262A78003BE4E3 /* TShadowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F116ECBF29262A34003BE4E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F116ECC229263D38003BE4E3 /* TBaseController.swift */,
+				F116ECAE29261603003BE4E3 /* TMainController.swift */,
+				F116ECC429263EE9003BE4E3 /* TCircleListController.swift */,
+				F1DE79CC29288B5900A3A016 /* TCircleTypeController.swift */,
+				F1DE79D02928902300A3A016 /* TCircleTabController.swift */,
+				F1DE79D22928930900A3A016 /* TFeedController.swift */,
+				F1DE79D42928B82400A3A016 /* TModuleController.swift */,
+				F1DE79D62928D2EF00A3A016 /* TCustomSamplesController.swift */,
+				F1699498293AE1D000F65B9E /* TLoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F169949A293D898900F65B9E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F16994B2293DDA4F00F65B9E /* TCommon.swift */,
+				F169949B293D8A1500F65B9E /* Network */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F169949B293D8A1500F65B9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F16994A4293D8B0600F65B9E /* TRequest.swift */,
+				F16994A5293D8B0600F65B9E /* TRoute.swift */,
+				F16994A8293D90B000F65B9E /* TDataRequest+Decodable.swift */,
+				F16994AC293DC60300F65B9E /* TCodextended.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F1DE79C72928868600A3A016 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F16994B4293F560600F65B9E /* TeamCircleSDK.framework */,
+				F1699495293A0CF600F65B9E /* TeamCircleSDK.bundle */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		F1DE79D82928D53A00A3A016 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE79D92928DA9F00A3A016 /* TCustomSamplesModel.swift */,
+				F16994AA293D914B00F65B9E /* TUserModel.swift */,
+				F16994AE293DCCAA00F65B9E /* TAppManager.swift */,
+				F16994B0293DCE3C00F65B9E /* TFileManager+Extensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F579874A059B3AAB3123D1CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D75248D6F26503181244E0A0 /* Pods_TCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F116ECA629261603003BE4E3 /* TCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F116ECBB29261605003BE4E3 /* Build configuration list for PBXNativeTarget "TCDemo" */;
+			buildPhases = (
+				FACE2ED8E6D33B90813E1635 /* [CP] Check Pods Manifest.lock */,
+				F116ECA329261603003BE4E3 /* Sources */,
+				F116ECA429261603003BE4E3 /* Frameworks */,
+				F116ECA529261603003BE4E3 /* Resources */,
+				450197563EE098FA8C5A6681 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCDemo;
+			productName = TCDemo;
+			productReference = F116ECA729261603003BE4E3 /* TCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F116EC9F29261602003BE4E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F116ECA629261603003BE4E3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = F116ECA229261602003BE4E3 /* Build configuration list for PBXProject "TCDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F116EC9E29261602003BE4E3;
+			productRefGroup = F116ECA829261603003BE4E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F116ECA629261603003BE4E3 /* TCDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F116ECA529261603003BE4E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F116ECB729261605003BE4E3 /* LaunchScreen.storyboard in Resources */,
+				F116ECB429261605003BE4E3 /* Assets.xcassets in Resources */,
+				F116ECB229261603003BE4E3 /* Main.storyboard in Resources */,
+				F1699497293A0CF600F65B9E /* TeamCircleSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		450197563EE098FA8C5A6681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCDemo/Pods-TCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCDemo/Pods-TCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCDemo/Pods-TCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FACE2ED8E6D33B90813E1635 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F116ECA329261603003BE4E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DE79D52928B82400A3A016 /* TModuleController.swift in Sources */,
+				F16994B3293DDA4F00F65B9E /* TCommon.swift in Sources */,
+				F1DE79D32928930900A3A016 /* TFeedController.swift in Sources */,
+				F1699499293AE1D000F65B9E /* TLoginController.swift in Sources */,
+				F16994A7293D8B0600F65B9E /* TRoute.swift in Sources */,
+				F116ECAF29261603003BE4E3 /* TMainController.swift in Sources */,
+				F116ECC129262A78003BE4E3 /* TShadowView.swift in Sources */,
+				F116ECC529263EE9003BE4E3 /* TCircleListController.swift in Sources */,
+				F16994AF293DCCAA00F65B9E /* TAppManager.swift in Sources */,
+				F16994A9293D90B000F65B9E /* TDataRequest+Decodable.swift in Sources */,
+				F16994AD293DC60300F65B9E /* TCodextended.swift in Sources */,
+				F1DE79D72928D2EF00A3A016 /* TCustomSamplesController.swift in Sources */,
+				F1DE79CD29288B5900A3A016 /* TCircleTypeController.swift in Sources */,
+				F116ECAB29261603003BE4E3 /* AppDelegate.swift in Sources */,
+				F116ECC329263D38003BE4E3 /* TBaseController.swift in Sources */,
+				F1DE79DA2928DA9F00A3A016 /* TCustomSamplesModel.swift in Sources */,
+				F16994A6293D8B0600F65B9E /* TRequest.swift in Sources */,
+				F1DE79D12928902300A3A016 /* TCircleTabController.swift in Sources */,
+				F16994B1293DCE3C00F65B9E /* TFileManager+Extensions.swift in Sources */,
+				F16994AB293D914B00F65B9E /* TUserModel.swift in Sources */,
+				F116ECAD29261603003BE4E3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F116ECB029261603003BE4E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F116ECB129261603003BE4E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F116ECB529261605003BE4E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F116ECB629261605003BE4E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F116ECB929261605003BE4E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F116ECBA29261605003BE4E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F116ECBC29261605003BE4E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F248223274408E1BF0960C /* Pods-TCDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 589BPG6583;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TCDemo/SDK",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamcircle.sdkdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F116ECBD29261605003BE4E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC13EB24BC2D4F3C66ECD1D /* Pods-TCDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 589BPG6583;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TCDemo/SDK",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamcircle.sdkdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F116ECA229261602003BE4E3 /* Build configuration list for PBXProject "TCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F116ECB929261605003BE4E3 /* Debug */,
+				F116ECBA29261605003BE4E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F116ECBB29261605003BE4E3 /* Build configuration list for PBXNativeTarget "TCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F116ECBC29261605003BE4E3 /* Debug */,
+				F116ECBD29261605003BE4E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F116EC9F29261602003BE4E3 /* Project object */;
+}

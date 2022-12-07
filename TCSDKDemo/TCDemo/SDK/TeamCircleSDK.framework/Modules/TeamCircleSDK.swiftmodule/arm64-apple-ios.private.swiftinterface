@@ -1,0 +1,924 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name TeamCircleSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AWSS3
+import CommonCrypto
+import CoreGraphics
+import CoreMotion
+import CoreText
+import Dispatch
+import Foundation
+import GiphyCoreSDK
+import GiphyUISDK
+import HyphenateChat
+import IGListKit
+import Lottie
+import MobileCoreServices
+import Photos
+import QuartzCore
+import SDWebImage
+import SnapKit
+import Swift
+import SystemConfiguration
+@_exported import TeamCircleSDK
+import UIKit
+import WCDBSwift
+import WebKit
+import _Concurrency
+import _StringProcessing
+import libkern
+import sqlcipher
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class TCBaseVCtrl : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ButtonBarPagerTabStripViewController : TeamCircleSDK.PagerTabStripViewController, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TCStorePostBarView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public let productId: Swift.Int
+  @_Concurrency.MainActor(unsafe) public var postCountDidChanged: ((_ count: Swift.Int) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var collectionView: UIKit.UICollectionView {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, productId: Swift.Int, navigationController: UIKit.UINavigationController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension TeamCircleSDK.TCStorePostBarView : UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+infix operator &/ : DefaultPrecedence
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>?, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TCMeBtn : TeamCircleSDK.TCBaseView {
+  @objc @_Concurrency.MainActor(unsafe) public var messageCount: UIKit.UILabel {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @objc @_Concurrency.MainActor(unsafe) public func requestUnreadMessageCount()
+  @objc @_Concurrency.MainActor(unsafe) public func readMessageCount()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TCFeedsVCtrl : TeamCircleSDK.TCBaseVCtrl {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var collectionView: UIKit.UICollectionView!
+  @objc @_Concurrency.MainActor(unsafe) weak final public var delegate: TeamCircleSDK.TCFeedViewDelegate?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public var canBecomeFirstResponder: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var inputAccessoryView: UIKit.UIView? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func shouldPerformSegue(withIdentifier identifier: Swift.String, sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension TeamCircleSDK.TCFeedsVCtrl : IGListKit.ListAdapterDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func listAdapter(_ listAdapter: IGListKit.ListAdapter, willDisplay object: Any, at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc final public func listAdapter(_ listAdapter: IGListKit.ListAdapter, didEndDisplaying object: Any, at index: Swift.Int)
+}
+extension TeamCircleSDK.TCFeedsVCtrl : IGListKit.ListAdapterDataSource {
+  @_Concurrency.MainActor(unsafe) @objc final public func objects(for listAdapter: IGListKit.ListAdapter) -> [IGListDiffKit.ListDiffable]
+  @_Concurrency.MainActor(unsafe) @objc final public func listAdapter(_ listAdapter: IGListKit.ListAdapter, sectionControllerFor object: Any) -> IGListKit.ListSectionController
+  @_Concurrency.MainActor(unsafe) @objc final public func emptyView(for listAdapter: IGListKit.ListAdapter) -> UIKit.UIView?
+}
+extension TeamCircleSDK.TCFeedsVCtrl : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+}
+extension TeamCircleSDK.TCFeedsVCtrl : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func textViewShouldBeginEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc final public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc final public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+extension TeamCircleSDK.TCFeedsVCtrl : GiphyUISDK.GiphyDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func didSearch(for term: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc final public func didSelectMedia(giphyViewController: GiphyUISDK.GiphyViewController, media: GiphyCoreSDK.GPHMedia)
+  @_Concurrency.MainActor(unsafe) @objc final public func didDismiss(controller: GiphyUISDK.GiphyViewController?)
+}
+extension TeamCircleSDK.TCFeedsVCtrl : UIKit.UIViewControllerPreviewingDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func previewingContext(_ previewingContext: UIKit.UIViewControllerPreviewing, viewControllerForLocation location: CoreFoundation.CGPoint) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc final public func previewingContext(_ previewingContext: UIKit.UIViewControllerPreviewing, commit viewControllerToCommit: UIKit.UIViewController)
+}
+extension TeamCircleSDK.TCFeedsVCtrl {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+}
+@objc public protocol TCFeedViewDelegate {
+  @objc func collectionViewDidScroll(collection: UIKit.UICollectionView)
+  @objc func didTapFavtor(imageURL: Foundation.URL)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TCFeedView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var collectionView: UIKit.UICollectionView?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var pickerButton: UIKit.UIButton?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class TCLocalizableManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TCProfileVCtrl : TeamCircleSDK.TCBaseVCtrl {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var pickerButton: UIKit.UIButton!
+  @objc deinit
+  @objc @_Concurrency.MainActor(unsafe) public static func initFromStoryboard(accountId: Swift.String) -> TeamCircleSDK.TCProfileVCtrl
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension TeamCircleSDK.TCProfileVCtrl : IGListKit.ListAdapterDataSource, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func objects(for listAdapter: IGListKit.ListAdapter) -> [IGListDiffKit.ListDiffable]
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func listAdapter(_ listAdapter: IGListKit.ListAdapter, sectionControllerFor object: Any) -> IGListKit.ListSectionController
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func emptyView(for listAdapter: IGListKit.ListAdapter) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+}
+extension TeamCircleSDK.TCProfileVCtrl : IGListKit.ListSingleSectionControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func didSelect(_ sectionController: IGListKit.ListSingleSectionController, with object: Any)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func shouldPerformSegue(withIdentifier identifier: Swift.String, sender: Any?) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class TCCircleNavController : TeamCircleSDK.TCBaseNavCtrl {
+  @_Concurrency.MainActor(unsafe) public var circleVCtrl: TeamCircleSDK.TCCircleHomeVCtrl?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public protocol TCManagerDelegate {
+  @objc func teamCirleFail(error: Foundation.NSError)
+  @objc func teamCirleSDKInit()
+  @objc func teamCirleAccountLogin()
+  @objc func teamCirleAccountLogout()
+  @objc func teamCirleDeleteAccount()
+  @objc func teamCirleAccountProfileChange(accountName: Swift.String, avatarUrl: Swift.String, bio: Swift.String)
+  @objc func shareJsonDownloaded(json: TeamCircleSDK.TCShareViewModel)
+  @objc func notificationStateChanged(count: Swift.Int)
+  @objc func messageChanged(count: Swift.Int)
+}
+@objc public protocol TCShareControllerDelegate {
+  @objc func teamCirleShareClear()
+}
+@objc public enum TCThemeType : ObjectiveC.NSInteger {
+  case light = 0
+  case dark = 1
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class TCManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: TeamCircleSDK.TCManager
+  @objc public var initSuccess: Swift.Bool {
+    get
+  }
+  @objc public var isLogin: Swift.Bool {
+    get
+  }
+  @objc public var imStatus: Swift.Bool {
+    get
+  }
+  @objc public var printLog: Swift.Bool
+  @objc weak public var delegate: TeamCircleSDK.TCManagerDelegate? {
+    get
+  }
+  @objc public var tallVersion: Swift.Bool {
+    get
+  }
+  @objc final public let version: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func initSDK(appId: Swift.String, appKey: Swift.String, delegate: Any, theme: TeamCircleSDK.TCThemeType = .dark)
+  @objc public func userLogin(userId: Swift.String, userName: Swift.String, avatarUrl: Swift.String = "", userEmail: Swift.String = "", userBio: Swift.String = "")
+  @objc public func userLogout()
+  @objc public func deleleAccount(complete: @escaping ((Swift.Error?) -> Swift.Void))
+  @objc public func initCircle(complete: ((TeamCircleSDK.TCCircleNavController?, Swift.Error?) -> Swift.Void))
+  @objc public func initStoreBtn(frame: CoreFoundation.CGRect, complete: ((TeamCircleSDK.TCStoreBtn?, Swift.Error?) -> Swift.Void))
+  @objc public func toStoreVCtrl(nav: UIKit.UINavigationController, complete: ((TeamCircleSDK.TCStoreVCtrl?, Swift.Error?) -> Swift.Void))
+  @objc public func initUserCenterBtn(frame: CoreFoundation.CGRect, image: Any, title: Swift.String, complete: ((TeamCircleSDK.TCMeBtn?, Swift.Error?) -> Swift.Void))
+  @objc public func toUserCenterVCtrl(nav: UIKit.UINavigationController, complete: ((TeamCircleSDK.TCProfileVCtrl?, Swift.Error?) -> Swift.Void))
+  @objc public func registeredToProfileVCtrl(nav: UIKit.UINavigationController, complete: ((TeamCircleSDK.TCProfileVCtrl?, Swift.Error?) -> Swift.Void))
+  @objc public func requestUnreadMessageCount()
+  @objc public func requestUnreadIMMessageCount()
+  @objc public func judgeLoadView()
+  @objc public func initNotificBtn(frame: CoreFoundation.CGRect, image: Any, title: Swift.String, complete: ((TeamCircleSDK.TCNotificBtn?, Swift.Error?) -> Swift.Void))
+  @objc public func jumpToNotificationCenter(nav: UIKit.UINavigationController, complete: ((TeamCircleSDK.TCNotificationVCtrl?, Swift.Error?) -> Swift.Void))
+  @objc public func initFeedController(nav: UIKit.UINavigationController, complete: ((TeamCircleSDK.TCFeedsVCtrl?, Swift.Error?) -> Swift.Void))
+  @objc public func initNewPostBtn(frame: CoreFoundation.CGRect, image: Any, title: Swift.String, complete: ((TeamCircleSDK.TCPostShareBtn?, Swift.Error?) -> Swift.Void))
+  @objc public func toNewPostVCtrl(complete: ((Swift.Error?) -> Swift.Void))
+  @objc public func initSearchBtn(frame: CoreFoundation.CGRect, image: Any, title: Swift.String, complete: ((TeamCircleSDK.TCSearchBtn?, Swift.Error?) -> Swift.Void))
+  @objc public func toSearchVCtrl(complete: ((Swift.Error?) -> Swift.Void))
+  @objc public func initCustomerPostBar(frame: CoreFoundation.CGRect, nav: UIKit.UINavigationController, productId: Swift.Int, complete: ((TeamCircleSDK.TCStorePostBarView?, Swift.Error?) -> Swift.Void))
+  @objc public func accountBanAllActivities() -> Swift.Bool
+  @objc public func setShareJsonController(_ controller: UIKit.UIViewController, complete: ((Swift.Error?) -> Swift.Void))
+  @objc public func setTextFontRegular(font: UIKit.UIFont? = nil, color: UIKit.UIColor? = nil) -> Swift.Bool
+  @objc public func setTextFontBold(font: UIKit.UIFont? = nil, color: UIKit.UIColor? = nil) -> Swift.Bool
+  @objc public func setTextFontAction(font: UIKit.UIFont? = nil, color: UIKit.UIColor? = nil) -> Swift.Bool
+  @objc public func setTextFontProductName(font: UIKit.UIFont? = nil, color: UIKit.UIColor? = nil) -> Swift.Bool
+  @objc public func setTextFontProductPrice(font: UIKit.UIFont? = nil, color: UIKit.UIColor? = nil) -> Swift.Bool
+  @objc public func setTextFontPricedecimalFront(font: UIKit.UIFont? = nil, color: UIKit.UIColor? = nil) -> Swift.Bool
+  @objc public func setIconFavorite(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconFavoriteSelected(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconTag(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconTagSelected(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconLike(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconLikeSelected(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconComment(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconShare(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconBack(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setShareJsonIcons(downloadIcon: UIKit.UIImage, disableDownloadIcon: UIKit.UIImage, uploadIcon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setIconNewPost(icon: UIKit.UIImage) -> Swift.Bool
+  @objc public func setBackgroundEffectColor(color: UIKit.UIColor) -> Swift.Bool
+  @objc public func setSystemBackgroundColor(color: UIKit.UIColor) -> Swift.Bool
+  @objc public func systemNavigationBarTextColor(color: UIKit.UIColor) -> Swift.Bool
+  @objc public func setLinkColor(color: UIKit.UIColor) -> Swift.Bool
+  @objc public func setProductDescColor(color: UIKit.UIColor) -> Swift.Bool
+  @objc public func setPrivacyPolicy(url: Swift.String) -> Swift.Bool
+  @objc public func setTermsAndConditions(url: Swift.String) -> Swift.Bool
+  @objc public func setShareJsonTitle(title: Swift.String) -> Swift.Bool
+  @objc public func setShareJsonDownloadedTips(tips: Swift.String) -> Swift.Bool
+  @objc public func setShareJson(shareJson: TeamCircleSDK.TCShareJson)
+  @objc public func clearShareJson()
+  @objc public func initIMBtn(frame: CoreFoundation.CGRect, image: Any, title: Swift.String, complete: ((TeamCircleSDK.TCIMBtn?, Swift.Error?) -> Swift.Void))
+  @objc public func isLoggedinIM() -> Swift.Bool
+  @objc public func toChatListAction(nav: UIKit.UINavigationController)
+  @objc public func toChatAction(nav: UIKit.UINavigationController, conversationId: Swift.String)
+  @objc public func getGifVC() -> GiphyUISDK.GiphyViewController
+  @objc public func toClearGifCache()
+  @objc public func uploadIMVideo(url: Foundation.URL, complete: @escaping (_ url: Swift.String?) -> Swift.Void)
+  @objc public func convertVideoUrl(url: Swift.String, complete: @escaping (_ url: Swift.String?) -> Swift.Void)
+  @objc public func msgShowHUD(content: Swift.String, delay: Foundation.TimeInterval)
+  @objc public func msgShowHUDSuccess()
+  @objc public func canLoadIMDataFromServer() -> Swift.Bool
+  @objc public func setIMDataNotFromServer()
+  @objc public func getPhotoPickerVC() -> UIKit.UINavigationController
+  @objc public func getBundlePath() -> Foundation.Bundle
+  @objc public func getTheme() -> TeamCircleSDK.TCThemeType
+  @objc public func setNavigationAttribute(navigation: UIKit.UINavigationController?)
+  @objc public var systemTextFront: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var systemUserFront: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var systemText2Front: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var systemText3Front: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var systemText4Front: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var feedOfficialFont: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var chatViewTitleFront: UIKit.UIFont {
+    @objc get
+  }
+  @objc public var systemTextColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var systemText2Color: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var systemUserColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var systemBackgroundColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var searchBoxBgColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var systemSeparatorColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var feedOfficialBgColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var feedOfficialColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var systemBackgroundEffectColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgSendBGColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgRecvBGColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgTextBoxColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgLinkColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var userUnfollowbgColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var productListBgColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var productListCellBgColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgDetailCellbgColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgDetailSeparatorColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgDetailSwitchOffColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgSendTextColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgRecvTextColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgChatBGColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var msgDetailBGColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public var backImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var newPostSearchImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var systemDefaultUserImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var systemPlaceholderUserImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var feedMoreImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgSendBGImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgRecvBGImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarMoreImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarCancelMoreImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarVoiceImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarKeyboardImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarGifImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarAlbumImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgChatBarCameraImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgSendFailImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgCopyImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgDeleteImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgRecallImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgForwardImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgSaveImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgSendAudioImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgSendAudio1Image: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgSendAudio2Image: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgRecvAudioImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgRecvAudio1Image: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgRecvAudio2Image: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var feedMusicPauseImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgImgBrokenImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgVideoDefaultImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioBtnImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioSlide01WhiteImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioSlide02WhiteImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioSlide03WhiteImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioSlide01BlueImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioSlide02BlueImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAudioSlide03BlueImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgRedAudioBtnImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgBlueAudioBtnImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var userRightImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgListMuteImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgAbumImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var userMoreImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var msgShareImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var circleStoreImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var circleSearchImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var circleMessageImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var circleUserCenterImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var userNewPostImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var searchText: Swift.String {
+    @objc get
+  }
+  @objc public var messageText: Swift.String {
+    @objc get
+  }
+  @objc public var noChatInformationText: Swift.String {
+    @objc get
+  }
+  @objc public var officialStaffText: Swift.String {
+    @objc get
+  }
+  @objc public var deleteText: Swift.String {
+    @objc get
+  }
+  @objc public var areYouSureToDeleteText: Swift.String {
+    @objc get
+  }
+  @objc public var cancelText: Swift.String {
+    @objc get
+  }
+  @objc public var stickOnTopText: Swift.String {
+    @objc get
+  }
+  @objc public var cancelOnTopText: Swift.String {
+    @objc get
+  }
+  @objc public var markAsReadText: Swift.String {
+    @objc get
+  }
+  @objc public var markAsUnreadText: Swift.String {
+    @objc get
+  }
+  @objc public var typingText: Swift.String {
+    @objc get
+  }
+  @objc public var albumText: Swift.String {
+    @objc get
+  }
+  @objc public var cameraText: Swift.String {
+    @objc get
+  }
+  @objc public var sendAMessageText: Swift.String {
+    @objc get
+  }
+  @objc public var readText: Swift.String {
+    @objc get
+  }
+  @objc public var pictureText: Swift.String {
+    @objc get
+  }
+  @objc public var videoText: Swift.String {
+    @objc get
+  }
+  @objc public var someoneMeText: Swift.String {
+    @objc get
+  }
+  @objc public var youRetractMessageText: Swift.String {
+    @objc get
+  }
+  @objc public var theOtherPartyWithdrawsMessageText: Swift.String {
+    @objc get
+  }
+  @objc public var copyText: Swift.String {
+    @objc get
+  }
+  @objc public var withdrawText: Swift.String {
+    @objc get
+  }
+  @objc public var forwardText: Swift.String {
+    @objc get
+  }
+  @objc public var saveText: Swift.String {
+    @objc get
+  }
+  @objc public var selectLinkOpenText: Swift.String {
+    @objc get
+  }
+  @objc public var getThumbnailsText: Swift.String {
+    @objc get
+  }
+  @objc public var downloadOriginalText: Swift.String {
+    @objc get
+  }
+  @objc public var failedDownloadOriginalText: Swift.String {
+    @objc get
+  }
+  @objc public var failedGetOriginalText: Swift.String {
+    @objc get
+  }
+  @objc public var downloadingVoiceLaterText: Swift.String {
+    @objc get
+  }
+  @objc public var downloadVoiceText: Swift.String {
+    @objc get
+  }
+  @objc public var failedDownloadVoiceText: Swift.String {
+    @objc get
+  }
+  @objc public var downloadVideoText: Swift.String {
+    @objc get
+  }
+  @objc public var failedDownloadVideoText: Swift.String {
+    @objc get
+  }
+  @objc public var downloadingVideoLaterText: Swift.String {
+    @objc get
+  }
+  @objc public var downloadThumbnailsText: Swift.String {
+    @objc get
+  }
+  @objc public var holdToTalkText: Swift.String {
+    @objc get
+  }
+  @objc public var releaseSendText: Swift.String {
+    @objc get
+  }
+  @objc public var releaseCancelText: Swift.String {
+    @objc get
+  }
+  @objc public var pictureTooBigText: Swift.String {
+    @objc get
+  }
+  @objc public var videoTooLargeText: Swift.String {
+    @objc get
+  }
+  @objc public var speakingTimeTooShortText: Swift.String {
+    @objc get
+  }
+  @objc public var relayMessageText: Swift.String {
+    @objc get
+  }
+  @objc public var detailText: Swift.String {
+    @objc get
+  }
+  @objc public var clearChatPromptText: Swift.String {
+    @objc get
+  }
+  @objc public var clearText: Swift.String {
+    @objc get
+  }
+  @objc public var chatHistoryClearedText: Swift.String {
+    @objc get
+  }
+  @objc public var failedClearChatRecordText: Swift.String {
+    @objc get
+  }
+  @objc public var failedSetNoDisturbText: Swift.String {
+    @objc get
+  }
+  @objc public var searchChatHistoryText: Swift.String {
+    @objc get
+  }
+  @objc public var browseChatMediaText: Swift.String {
+    @objc get
+  }
+  @objc public var muteNotificationText: Swift.String {
+    @objc get
+  }
+  @objc public var stickyOnTopText: Swift.String {
+    @objc get
+  }
+  @objc public var clearChatHistoryText: Swift.String {
+    @objc get
+  }
+  @objc public var mediaText: Swift.String {
+    @objc get
+  }
+  @objc public var noText: Swift.String {
+    @objc get
+  }
+  @objc public var chathistoryfoundText: Swift.String {
+    @objc get
+  }
+  @objc public var voiceText: Swift.String {
+    @objc get
+  }
+  @objc public var noResultText: Swift.String {
+    @objc get
+  }
+  @objc public var yesterdayText: Swift.String {
+    @objc get
+  }
+  @objc public var msgHasBlockdPromptText: Swift.String {
+    @objc get
+  }
+  @objc public var bANALLACTIVITIESPromptText: Swift.String {
+    @objc get
+  }
+  @objc public var closeText: Swift.String {
+    @objc get
+  }
+  @objc public var doneText: Swift.String {
+    @objc get
+  }
+  @objc public var msgIMPhotoFinishName: Foundation.NSNotification.Name {
+    @objc get
+  }
+  @objc public var msgIMVidoFinishName: Foundation.NSNotification.Name {
+    @objc get
+  }
+  @objc public var commentPhotoName: Foundation.NSNotification.Name {
+    @objc get
+  }
+  @objc public var messageIMPostOjbect: Swift.String {
+    @objc get
+  }
+  @objc public var messageIMCustomVideoEvent: Swift.String {
+    @objc get
+  }
+  @objc public var messageIMCustomVideoKey: Swift.String {
+    @objc get
+  }
+  @objc public var messageIMChatPageKey: Swift.String {
+    @objc get
+  }
+}
+extension TeamCircleSDK.TCManager : HyphenateChat.EMChatManagerDelegate {
+  @objc dynamic public func messagesDidReceive(_ aMessages: [HyphenateChat.EMChatMessage])
+  @objc dynamic public func messagesDidRead(_ aMessages: [HyphenateChat.EMChatMessage])
+  @objc dynamic public func conversationListDidUpdate(_ aConversationList: [HyphenateChat.EMConversation])
+  @objc dynamic public func onConversationRead(_ from: Swift.String, to: Swift.String)
+}
+extension TeamCircleSDK.TCManager : HyphenateChat.EMClientDelegate {
+  @objc dynamic public func userAccountDidForced(toLogout aError: HyphenateChat.EMError?)
+  @objc dynamic public func autoLoginDidCompleteWithError(_ aError: HyphenateChat.EMError?)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class TCStoreVCtrl : TeamCircleSDK.ButtonBarPagerTabStripViewController {
+  @objc @_Concurrency.MainActor(unsafe) final public var buttonBarItemFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var secondButtonBarItemFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var buttonBarItemTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var buttonBarItemSelectTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func viewControllers(for pagerTabStripController: TeamCircleSDK.PagerTabStripViewController) -> [UIKit.UIViewController]
+  @_Concurrency.MainActor(unsafe) @objc override final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+extension TeamCircleSDK.TCStoreVCtrl {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TCSearchBtn : TeamCircleSDK.TCBaseView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(frame: CoreFoundation.CGRect, image: Any, title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TCNotificBtn : TeamCircleSDK.TCBaseView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(frame: CoreFoundation.CGRect, image: Any, title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public class TCShareJson : ObjectiveC.NSObject {
+  public var appId: Swift.String
+  public var appLogo: UIKit.UIImage?
+  public var thumbnail: UIKit.UIImage
+  public var content: Swift.String
+  public var name: Swift.String
+  public init(appId: Swift.String, thumbnail: UIKit.UIImage, content: Swift.String, name: Swift.String, appLogo: UIKit.UIImage? = nil)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class TCBaseView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public let imgView: UIKit.UIImageView
+  @objc @_Concurrency.MainActor(unsafe) final public let titleLbl: UIKit.UILabel
+  @objc @_Concurrency.MainActor(unsafe) final public let btn: UIKit.UIButton
+  @objc @_Concurrency.MainActor(unsafe) public var navCtrl: UIKit.UINavigationController?
+  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, image: Any, title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TCStoreBtn : TeamCircleSDK.TCBaseView {
+  @objc @_Concurrency.MainActor(unsafe) public var imgaeDidChanged: ((_ image: UIKit.UIImage) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override public init(frame: CoreFoundation.CGRect, image: Any, title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setBtnImage()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class TCBaseNavCtrl : UIKit.UINavigationController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum TCError {
+  case uninitialized
+  case failedGetUUID
+  case userNotLogged
+  case packageNotSupported
+  case imFunctionOff
+  public static func == (a: TeamCircleSDK.TCError, b: TeamCircleSDK.TCError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ObjectiveC.NSObject : IGListDiffKit.ListDiffable {
+  @objc dynamic public func diffIdentifier() -> ObjectiveC.NSObjectProtocol
+  @objc dynamic public func isEqual(toDiffableObject object: IGListDiffKit.ListDiffable?) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class TCMessage {
+  public static let shared: TeamCircleSDK.TCMessage
+  final public func requestUnreadMessageCount()
+  final public func requestUnreadIMMessageCount()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class TCShareViewModel : ObjectiveC.NSObject {
+  @objc final public let appLogo: Swift.String?
+  @objc final public let thumbnail: Swift.String
+  @objc final public let content: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let appId: Swift.String
+  @objc final public let downloadNumber: Swift.Int
+  @objc final public let postId: Swift.Int
+  @objc deinit
+}
+extension TeamCircleSDK.TCShareViewModel {
+  @objc override final public func diffIdentifier() -> ObjectiveC.NSObjectProtocol
+  @objc override final public func isEqual(toDiffableObject object: IGListDiffKit.ListDiffable?) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TCPostShareBtn : TeamCircleSDK.TCBaseView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(frame: CoreFoundation.CGRect, image: Any, title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TCNotificationVCtrl : TeamCircleSDK.TCBaseVCtrl {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TeamCircleSDK.TCNotificationVCtrl : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TCIMBtn : TeamCircleSDK.TCBaseView {
+  @objc @_Concurrency.MainActor(unsafe) public var messageCount: UIKit.UILabel {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @objc @_Concurrency.MainActor(unsafe) public func requestUnreadIMMessageCount()
+  @objc @_Concurrency.MainActor(unsafe) public func readMessageCount()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PagerTabStripViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var shouldAutomaticallyForwardAppearanceMethods: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TeamCircleSDK.TCThemeType : Swift.Equatable {}
+extension TeamCircleSDK.TCThemeType : Swift.Hashable {}
+extension TeamCircleSDK.TCThemeType : Swift.RawRepresentable {}
+extension TeamCircleSDK.TCError : Swift.Equatable {}
+extension TeamCircleSDK.TCError : Swift.Hashable {}

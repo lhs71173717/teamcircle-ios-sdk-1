@@ -1,0 +1,6 @@
+framework module Pods_TCDemo {
+  umbrella header "Pods-TCDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
