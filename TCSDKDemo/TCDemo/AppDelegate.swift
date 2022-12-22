@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        TCManager.sharedInstance.initSDK(appId: "ty9muwb1", appKey: "7c44217bea2c46beaeb87aa0b01a0fbc", delegate: self, theme: .light)
+        TCManager.sharedInstance.initSDK(appId: "cojksawr", appKey: "d6526542a1c247c399aa41e66122118f", delegate: self, theme: .light)
         return true
     }
 

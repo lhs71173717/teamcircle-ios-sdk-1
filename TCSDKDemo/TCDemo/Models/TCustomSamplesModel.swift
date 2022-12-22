@@ -198,8 +198,8 @@ class TCustomSamplesModel: NSObject {
         case .toChatListAction:
             TCManager.sharedInstance.toChatListAction(nav: nav)
         case .toChatAction:
-            TCManager.sharedInstance.toChatAction(nav: nav, conversationId: "")
-        
+//            TCManager.sharedInstance.toChatAction(nav: nav, conversationId: "")
+            break
         //Enter the User Center, click More in the upper right corner, and click Settings
         case .setPrivacyPolicy:
             TCManager.sharedInstance.setPrivacyPolicy(url: "")

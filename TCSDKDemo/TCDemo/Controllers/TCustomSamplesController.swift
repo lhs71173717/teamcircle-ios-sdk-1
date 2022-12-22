@@ -44,7 +44,7 @@ enum TCustomSamplesType {
 
 class TCustomSamplesController: TBaseController, UITableViewDelegate, UITableViewDataSource {
 
-    let datas : [[TCustomSamplesType]] = [[.normal], [.setTextFontRegular, .setTextFontBold, .setTextFontAction, .setTextFontProductName, .setTextFontProductPrice, .setProductDescColor], [.setIconFavorite, .setIconFavoriteSelected, .setIconTag, .setIconTagSelected, .setIconLike, .setIconLikeSelected, .setIconShare, .setIconComment, .setIconNewPost, .setIconBack], [.setSystemBackgroundColor, .setBackgroundEffectColor, .setLinkColor], [.toStoreVCtrl, .toUserCenterVCtrl, .toNewPostVCtrl, .toSearchVCtrl, .toChatListAction, .toChatAction]//, [.setPrivacyPolicy, .setTermsAndConditions]
+    let datas : [[TCustomSamplesType]] = [[.normal], [.setTextFontRegular, .setTextFontBold, .setTextFontAction, .setTextFontProductName, .setTextFontProductPrice, .setProductDescColor], [.setIconFavorite, .setIconFavoriteSelected, .setIconTag, .setIconTagSelected, .setIconLike, .setIconLikeSelected, .setIconShare, .setIconComment, .setIconNewPost, .setIconBack], [.setSystemBackgroundColor, .setBackgroundEffectColor, .setLinkColor], [.toStoreVCtrl, .toUserCenterVCtrl, .toNewPostVCtrl, .toSearchVCtrl, .toChatListAction]//, [.setPrivacyPolicy, .setTermsAndConditions]
     ]
     let titles: [String] = ["DEFAULT", "TEXT FONTS AND COLORS", "ICONS", "COLORS", "REDIRECT", "TERMS AND PRIVACY POLICY"]
     
