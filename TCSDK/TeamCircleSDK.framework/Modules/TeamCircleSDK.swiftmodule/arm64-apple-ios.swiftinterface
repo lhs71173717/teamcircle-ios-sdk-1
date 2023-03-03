@@ -311,7 +311,7 @@ extension TeamCircleSDK.TCProfileVCtrl : IGListKit.ListSingleSectionControllerDe
   @objc public var systemText4Front: UIKit.UIFont {
     @objc get
   }
-  @objc public var feedOfficialFont: UIKit.UIFont {
+  @objc public var userTagsFont: UIKit.UIFont {
     @objc get
   }
   @objc public var chatViewTitleFront: UIKit.UIFont {
@@ -335,10 +335,10 @@ extension TeamCircleSDK.TCProfileVCtrl : IGListKit.ListSingleSectionControllerDe
   @objc public var systemSeparatorColor: UIKit.UIColor {
     @objc get
   }
-  @objc public var feedOfficialBgColor: UIKit.UIColor {
+  @objc public var userTagsBgColor: UIKit.UIColor {
     @objc get
   }
-  @objc public var feedOfficialColor: UIKit.UIColor {
+  @objc public var userTagsColor: UIKit.UIColor {
     @objc get
   }
   @objc public var systemBackgroundEffectColor: UIKit.UIColor {

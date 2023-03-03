@@ -17,8 +17,6 @@
 		F116ECC129262A78003BE4E3 /* TShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECC029262A78003BE4E3 /* TShadowView.swift */; };
 		F116ECC329263D38003BE4E3 /* TBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECC229263D38003BE4E3 /* TBaseController.swift */; };
 		F116ECC529263EE9003BE4E3 /* TCircleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116ECC429263EE9003BE4E3 /* TCircleListController.swift */; };
-		F117255F29543B8A00807C8C /* TeamCircleSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F117255D29543B8800807C8C /* TeamCircleSDK.bundle */; };
-		F117256029543B8A00807C8C /* TeamCircleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F117255E29543B8A00807C8C /* TeamCircleSDK.framework */; };
 		F1699499293AE1D000F65B9E /* TLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1699498293AE1D000F65B9E /* TLoginController.swift */; };
 		F16994A6293D8B0600F65B9E /* TRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994A4293D8B0600F65B9E /* TRequest.swift */; };
 		F16994A7293D8B0600F65B9E /* TRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994A5293D8B0600F65B9E /* TRoute.swift */; };
@@ -28,6 +26,8 @@
 		F16994AF293DCCAA00F65B9E /* TAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994AE293DCCAA00F65B9E /* TAppManager.swift */; };
 		F16994B1293DCE3C00F65B9E /* TFileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994B0293DCE3C00F65B9E /* TFileManager+Extensions.swift */; };
 		F16994B3293DDA4F00F65B9E /* TCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16994B2293DDA4F00F65B9E /* TCommon.swift */; };
+		F1B5670E29B1EAD000D0E979 /* TeamCircleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B5670C29B1EACF00D0E979 /* TeamCircleSDK.framework */; };
+		F1B5670F29B1EAD000D0E979 /* TeamCircleSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1B5670D29B1EACF00D0E979 /* TeamCircleSDK.bundle */; };
 		F1DE79CD29288B5900A3A016 /* TCircleTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79CC29288B5900A3A016 /* TCircleTypeController.swift */; };
 		F1DE79D12928902300A3A016 /* TCircleTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D02928902300A3A016 /* TCircleTabController.swift */; };
 		F1DE79D32928930900A3A016 /* TFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE79D22928930900A3A016 /* TFeedController.swift */; };
@@ -51,8 +51,6 @@
 		F116ECC029262A78003BE4E3 /* TShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TShadowView.swift; sourceTree = "<group>"; };
 		F116ECC229263D38003BE4E3 /* TBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBaseController.swift; sourceTree = "<group>"; };
 		F116ECC429263EE9003BE4E3 /* TCircleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCircleListController.swift; sourceTree = "<group>"; };
-		F117255D29543B8800807C8C /* TeamCircleSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeamCircleSDK.bundle; sourceTree = "<group>"; };
-		F117255E29543B8A00807C8C /* TeamCircleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TeamCircleSDK.framework; sourceTree = "<group>"; };
 		F1699498293AE1D000F65B9E /* TLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLoginController.swift; sourceTree = "<group>"; };
 		F16994A4293D8B0600F65B9E /* TRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRequest.swift; sourceTree = "<group>"; };
 		F16994A5293D8B0600F65B9E /* TRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRoute.swift; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		F16994AE293DCCAA00F65B9E /* TAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAppManager.swift; sourceTree = "<group>"; };
 		F16994B0293DCE3C00F65B9E /* TFileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TFileManager+Extensions.swift"; sourceTree = "<group>"; };
 		F16994B2293DDA4F00F65B9E /* TCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCommon.swift; sourceTree = "<group>"; };
+		F1B5670C29B1EACF00D0E979 /* TeamCircleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TeamCircleSDK.framework; sourceTree = "<group>"; };
+		F1B5670D29B1EACF00D0E979 /* TeamCircleSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeamCircleSDK.bundle; sourceTree = "<group>"; };
 		F1DE79CC29288B5900A3A016 /* TCircleTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCircleTypeController.swift; sourceTree = "<group>"; };
 		F1DE79D02928902300A3A016 /* TCircleTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCircleTabController.swift; sourceTree = "<group>"; };
 		F1DE79D22928930900A3A016 /* TFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFeedController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F117256029543B8A00807C8C /* TeamCircleSDK.framework in Frameworks */,
+				F1B5670E29B1EAD000D0E979 /* TeamCircleSDK.framework in Frameworks */,
 				405F3024AE28386FCA372FF9 /* Pods_TCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +175,8 @@
 		F1DE79C72928868600A3A016 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				F117255D29543B8800807C8C /* TeamCircleSDK.bundle */,
-				F117255E29543B8A00807C8C /* TeamCircleSDK.framework */,
+				F1B5670D29B1EACF00D0E979 /* TeamCircleSDK.bundle */,
+				F1B5670C29B1EACF00D0E979 /* TeamCircleSDK.framework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				F116ECB729261605003BE4E3 /* LaunchScreen.storyboard in Resources */,
 				F116ECB429261605003BE4E3 /* Assets.xcassets in Resources */,
 				F116ECB229261603003BE4E3 /* Main.storyboard in Resources */,
-				F117255F29543B8A00807C8C /* TeamCircleSDK.bundle in Resources */,
+				F1B5670F29B1EAD000D0E979 /* TeamCircleSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		8aqLm8pTCoSDik0N1GfSdh6HD2w=
-		</data>
 		<key>Circle.storyboardc/06R-89-3YG-view-pDh-Vl-EjT.nib/objects-11.0+.nib</key>
 		<data>
 		iznfMej1Hq+TQkMXbTBlRcFITdg=
@@ -58,15 +54,15 @@
 		</data>
 		<key>Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/objects-11.0+.nib</key>
 		<data>
-		IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+		/rCujum6xN83XrHyczfvhhGHOa4=
 		</data>
 		<key>Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/objects-12.3+.nib</key>
 		<data>
-		IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+		/rCujum6xN83XrHyczfvhhGHOa4=
 		</data>
 		<key>Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/runtime.nib</key>
 		<data>
-		4ee5G+t0TbmO+UzPglPjw9F0lYc=
+		9M+hxCSX9Gz/SptUvvwtJA8mmko=
 		</data>
 		<key>Circle.storyboardc/ChangePasswordViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -838,7 +834,7 @@
 		</data>
 		<key>Headers/TeamCircleSDK-Swift.h</key>
 		<data>
-		T5mBVenk92QHXdoK+qiGPTIc9tU=
+		51LAcyb4W+gUBaFJP0JEpP6KBf4=
 		</data>
 		<key>Headers/TeamCircleSDK.h</key>
 		<data>
@@ -858,19 +854,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PERGimsgvmxgKfed4nJezud9T24=
+		GKyvfOKYkVb0EQyERw9OHDzXcoM=
 		</data>
 		<key>Modules/TeamCircleSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		3MKgQ1hEeQArnyvwiwhFF3fgZrc=
+		hsTkV8NIm0ZW6LAdcNQjN7MnxF0=
 		</data>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		rXxV8l4fh/V+Xu2LwTu2TmF2xOo=
+		eZ+uy/xkiQCVz4w12tvE6hPIpL0=
 		</data>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		urRvdTvTEoVgGgyOH95gBercd40=
+		U7JADH3bMn3OcLjSEZLgCifQ6pE=
 		</data>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -878,11 +874,11 @@
 		</data>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		urRvdTvTEoVgGgyOH95gBercd40=
+		U7JADH3bMn3OcLjSEZLgCifQ6pE=
 		</data>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Qr71+cokLQhNa6vwNpDZuYD+sA8=
+		S+xPHIQvVS0kgYTz8MLPEdm4SB0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1048,6 +1044,14 @@
 		<data>
 		7ypzmtDMFHinoKu9pxT1UcWdpN4=
 		</data>
+		<key>TCPostTagsCell.nib/objects-12.3+.nib</key>
+		<data>
+		1uv+ACkC/4ul1QJiUndkMf2CS0c=
+		</data>
+		<key>TCPostTagsCell.nib/runtime.nib</key>
+		<data>
+		VXXU0fIqtwfZk576Qu7/+A1BUOk=
+		</data>
 		<key>TCProductCell.nib/objects-11.0+.nib</key>
 		<data>
 		oqsRZ//+c48IqKOPTcROPv1+qfU=
@@ -1194,11 +1198,11 @@
 		</data>
 		<key>TCUserInfoCell.nib/objects-12.3+.nib</key>
 		<data>
-		7tfCGU0Q700I7E8mWlcR6fPiXq0=
+		rpErKETablx+SJQPinO3/J76d9E=
 		</data>
 		<key>TCUserInfoCell.nib/runtime.nib</key>
 		<data>
-		i0PqQ4Joouu7YoBnFVDHE4wKOkM=
+		sYetCe0Y1WXkUu/DSTIF7G2CevE=
 		</data>
 		<key>TCVideoCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -1366,15 +1370,15 @@
 		</data>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/objects-11.0+.nib</key>
 		<data>
-		IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+		/rCujum6xN83XrHyczfvhhGHOa4=
 		</data>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/objects-12.3+.nib</key>
 		<data>
-		IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+		/rCujum6xN83XrHyczfvhhGHOa4=
 		</data>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/runtime.nib</key>
 		<data>
-		4ee5G+t0TbmO+UzPglPjw9F0lYc=
+		9M+hxCSX9Gz/SptUvvwtJA8mmko=
 		</data>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/ChangePasswordViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -2784,6 +2788,14 @@
 		<data>
 		7ypzmtDMFHinoKu9pxT1UcWdpN4=
 		</data>
+		<key>TeamCircleSDK.bundle/TCPostTagsCell.nib/objects-12.3+.nib</key>
+		<data>
+		1uv+ACkC/4ul1QJiUndkMf2CS0c=
+		</data>
+		<key>TeamCircleSDK.bundle/TCPostTagsCell.nib/runtime.nib</key>
+		<data>
+		VXXU0fIqtwfZk576Qu7/+A1BUOk=
+		</data>
 		<key>TeamCircleSDK.bundle/TCProductCell.nib/objects-11.0+.nib</key>
 		<data>
 		oqsRZ//+c48IqKOPTcROPv1+qfU=
@@ -2930,11 +2942,11 @@
 		</data>
 		<key>TeamCircleSDK.bundle/TCUserInfoCell.nib/objects-12.3+.nib</key>
 		<data>
-		7tfCGU0Q700I7E8mWlcR6fPiXq0=
+		rpErKETablx+SJQPinO3/J76d9E=
 		</data>
 		<key>TeamCircleSDK.bundle/TCUserInfoCell.nib/runtime.nib</key>
 		<data>
-		i0PqQ4Joouu7YoBnFVDHE4wKOkM=
+		sYetCe0Y1WXkUu/DSTIF7G2CevE=
 		</data>
 		<key>TeamCircleSDK.bundle/TCVideoCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -3504,7 +3516,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qWrTA+QaBMYasYgtQdQGJBGLYy0=
+			BdhZP+ST/JXRct6GLYZm5GhaeY4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4217,6 +4229,30 @@
 		<data>
 		ABfPAsxEB9RDEjpsWbmZ4FSr/Fc=
 		</data>
+		<key>TeamCircleSDK.bundle/newpost_tag_dark.png</key>
+		<data>
+		LLPsZRizkTdehcD+n1kVs00WGPk=
+		</data>
+		<key>TeamCircleSDK.bundle/newpost_tag_dark@2x.png</key>
+		<data>
+		plp0vAbO5GnxwmkWZ8JoOOCNmzQ=
+		</data>
+		<key>TeamCircleSDK.bundle/newpost_tag_dark@3x.png</key>
+		<data>
+		9M0VwNzyzxBI7kQKNXufylPgcfE=
+		</data>
+		<key>TeamCircleSDK.bundle/newpost_tag_light.png</key>
+		<data>
+		40AQewzB5XMHhd90be6ddg/IL7c=
+		</data>
+		<key>TeamCircleSDK.bundle/newpost_tag_light@2x.png</key>
+		<data>
+		mhuY92YaFp9a7tJSSwnZyDoDm9c=
+		</data>
+		<key>TeamCircleSDK.bundle/newpost_tag_light@3x.png</key>
+		<data>
+		y8j1Ev+BpBfAXfPoW9OX4w/jv9U=
+		</data>
 		<key>TeamCircleSDK.bundle/notification_dark.png</key>
 		<data>
 		0a9fu4+vMhfRei7c7DISOKm3k2w=
@@ -4725,7 +4761,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ag2cK8igVPY1V0Xs/WYIN8M+y5A=
+			LsNw0VsR0cMET0W2aa9LD3M/Sns=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4993,33 +5029,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+			/rCujum6xN83XrHyczfvhhGHOa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z+XGuxWBY1xB7AAQGdae1pZNBoQxyAA0ws72gEU+2Ao=
+			Oxw8ImE7jCalcx70ozWiHSv7jvDnClyFq0g0AHooeCs=
 			</data>
 		</dict>
 		<key>Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+			/rCujum6xN83XrHyczfvhhGHOa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z+XGuxWBY1xB7AAQGdae1pZNBoQxyAA0ws72gEU+2Ao=
+			Oxw8ImE7jCalcx70ozWiHSv7jvDnClyFq0g0AHooeCs=
 			</data>
 		</dict>
 		<key>Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4ee5G+t0TbmO+UzPglPjw9F0lYc=
+			9M+hxCSX9Gz/SptUvvwtJA8mmko=
 			</data>
 			<key>hash2</key>
 			<data>
-			oCd2xFv2rjlXFeo06yldbjSnXO2uA7AbtIiYVbZm+xk=
+			wtas3x0FR9yZPeaO0lGV18jpVOyLdDoGpKqna2svOa0=
 			</data>
 		</dict>
 		<key>Circle.storyboardc/ChangePasswordViewController.nib/objects-11.0+.nib</key>
@@ -7138,11 +7174,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T5mBVenk92QHXdoK+qiGPTIc9tU=
+			51LAcyb4W+gUBaFJP0JEpP6KBf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4/MmFcuOUCum5ZnGVVVy+HxBvWk9ce2+AkiUFDU9zQQ=
+			pI0GH/rA1gpRkEVU30nb6WAmrBDxy+cXxNxMzzjlsKA=
 			</data>
 		</dict>
 		<key>Headers/TeamCircleSDK.h</key>
@@ -7193,33 +7229,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3MKgQ1hEeQArnyvwiwhFF3fgZrc=
+			hsTkV8NIm0ZW6LAdcNQjN7MnxF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			JG253VzhWNXksTLISvzIVQu35Wa4ebhEVhEGLseqqPI=
+			2Z2gCSwU3HMll0IRldiKBhj0rle+oKGXWyzP9DAQuYo=
 			</data>
 		</dict>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rXxV8l4fh/V+Xu2LwTu2TmF2xOo=
+			eZ+uy/xkiQCVz4w12tvE6hPIpL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			wtcus6ik4F5bqurjeaYvJDhzaLsi6XLPnIts43s6U5o=
+			wn9W/mmPGqwhwJGsxvgC8rKTRTeBtzJU//nWNOhJm5Q=
 			</data>
 		</dict>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			urRvdTvTEoVgGgyOH95gBercd40=
+			U7JADH3bMn3OcLjSEZLgCifQ6pE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ASSICwn627zSoAevuJfq5TaVthLn9jmNmbOaTQ/GJxU=
+			CdMeZhy74jO+2ppK7JvBLv5G9SeGXiUfmrQxIiRHl/Y=
 			</data>
 		</dict>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -7237,22 +7273,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			urRvdTvTEoVgGgyOH95gBercd40=
+			U7JADH3bMn3OcLjSEZLgCifQ6pE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ASSICwn627zSoAevuJfq5TaVthLn9jmNmbOaTQ/GJxU=
+			CdMeZhy74jO+2ppK7JvBLv5G9SeGXiUfmrQxIiRHl/Y=
 			</data>
 		</dict>
 		<key>Modules/TeamCircleSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qr71+cokLQhNa6vwNpDZuYD+sA8=
+			S+xPHIQvVS0kgYTz8MLPEdm4SB0=
 			</data>
 			<key>hash2</key>
 			<data>
-			nL14PLNtrYKOlxQ7VgUF3zpgK/gvfE4+Dd6YDexxtjs=
+			UYljTwOM33tGgLbTqADeE1V8wFxPB19hav8jVvMuRbw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -7706,6 +7742,28 @@
 			Cg4MfIfHfGScl9ZGGZ1MCb4Zc0/URD1CC5AdpBje2Yc=
 			</data>
 		</dict>
+		<key>TCPostTagsCell.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1uv+ACkC/4ul1QJiUndkMf2CS0c=
+			</data>
+			<key>hash2</key>
+			<data>
+			X9fSilClX3+bHQnDsKOL1itwgl1LIZTJylK2iSO6g4k=
+			</data>
+		</dict>
+		<key>TCPostTagsCell.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VXXU0fIqtwfZk576Qu7/+A1BUOk=
+			</data>
+			<key>hash2</key>
+			<data>
+			L6GAa6j802l5cNLeYZ2lHonL/90nFJ3fgzqpGQ3zKSw=
+			</data>
+		</dict>
 		<key>TCProductCell.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
@@ -8106,22 +8164,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7tfCGU0Q700I7E8mWlcR6fPiXq0=
+			rpErKETablx+SJQPinO3/J76d9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			b5JGjtWbfAt7V3VyT5hDgFErBraMhQJTeTDGxBRYlRI=
+			6TgmAYzAMVxsgwA623DKcus9oQB0HkKru9+LzOejBT0=
 			</data>
 		</dict>
 		<key>TCUserInfoCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i0PqQ4Joouu7YoBnFVDHE4wKOkM=
+			sYetCe0Y1WXkUu/DSTIF7G2CevE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y/hz/qg9HBEVVD4AezUtpkaiFkm5lg3KoxmNZNbom5U=
+			X+36ZswCyyY5qweCy4FBeK2IM3NFhrwZ3yoovhS+4m8=
 			</data>
 		</dict>
 		<key>TCVideoCell.nib/objects-12.3+.nib</key>
@@ -8579,33 +8637,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+			/rCujum6xN83XrHyczfvhhGHOa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z+XGuxWBY1xB7AAQGdae1pZNBoQxyAA0ws72gEU+2Ao=
+			Oxw8ImE7jCalcx70ozWiHSv7jvDnClyFq0g0AHooeCs=
 			</data>
 		</dict>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IzJjHhta0mpCZ8VvsyJ7gcBFYpo=
+			/rCujum6xN83XrHyczfvhhGHOa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z+XGuxWBY1xB7AAQGdae1pZNBoQxyAA0ws72gEU+2Ao=
+			Oxw8ImE7jCalcx70ozWiHSv7jvDnClyFq0g0AHooeCs=
 			</data>
 		</dict>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/Bfy-wG-YIt-view-mgM-uP-H0x.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4ee5G+t0TbmO+UzPglPjw9F0lYc=
+			9M+hxCSX9Gz/SptUvvwtJA8mmko=
 			</data>
 			<key>hash2</key>
 			<data>
-			oCd2xFv2rjlXFeo06yldbjSnXO2uA7AbtIiYVbZm+xk=
+			wtas3x0FR9yZPeaO0lGV18jpVOyLdDoGpKqna2svOa0=
 			</data>
 		</dict>
 		<key>TeamCircleSDK.bundle/Circle.storyboardc/ChangePasswordViewController.nib/objects-11.0+.nib</key>
@@ -12480,6 +12538,28 @@
 			Cg4MfIfHfGScl9ZGGZ1MCb4Zc0/URD1CC5AdpBje2Yc=
 			</data>
 		</dict>
+		<key>TeamCircleSDK.bundle/TCPostTagsCell.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1uv+ACkC/4ul1QJiUndkMf2CS0c=
+			</data>
+			<key>hash2</key>
+			<data>
+			X9fSilClX3+bHQnDsKOL1itwgl1LIZTJylK2iSO6g4k=
+			</data>
+		</dict>
+		<key>TeamCircleSDK.bundle/TCPostTagsCell.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VXXU0fIqtwfZk576Qu7/+A1BUOk=
+			</data>
+			<key>hash2</key>
+			<data>
+			L6GAa6j802l5cNLeYZ2lHonL/90nFJ3fgzqpGQ3zKSw=
+			</data>
+		</dict>
 		<key>TeamCircleSDK.bundle/TCProductCell.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
@@ -12880,22 +12960,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7tfCGU0Q700I7E8mWlcR6fPiXq0=
+			rpErKETablx+SJQPinO3/J76d9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			b5JGjtWbfAt7V3VyT5hDgFErBraMhQJTeTDGxBRYlRI=
+			6TgmAYzAMVxsgwA623DKcus9oQB0HkKru9+LzOejBT0=
 			</data>
 		</dict>
 		<key>TeamCircleSDK.bundle/TCUserInfoCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i0PqQ4Joouu7YoBnFVDHE4wKOkM=
+			sYetCe0Y1WXkUu/DSTIF7G2CevE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y/hz/qg9HBEVVD4AezUtpkaiFkm5lg3KoxmNZNbom5U=
+			X+36ZswCyyY5qweCy4FBeK2IM3NFhrwZ3yoovhS+4m8=
 			</data>
 		</dict>
 		<key>TeamCircleSDK.bundle/TCVideoCell.nib/objects-12.3+.nib</key>
@@ -14453,11 +14533,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qWrTA+QaBMYasYgtQdQGJBGLYy0=
+			BdhZP+ST/JXRct6GLYZm5GhaeY4=
 			</data>
 			<key>hash2</key>
 			<data>
-			TcfOyEiI34SPVMjnZw4t6yZ094hfBEZu8oXQM/koa9g=
+			ft4OlW+jkPsojDvlKt/5tkcTS/FRKeQqJuO5GzUtfNo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -16409,6 +16489,72 @@
 			QaFibqGdnQtEzGteJYpdM8UZlO8agVAONwfLY75OT2w=
 			</data>
 		</dict>
+		<key>TeamCircleSDK.bundle/newpost_tag_dark.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LLPsZRizkTdehcD+n1kVs00WGPk=
+			</data>
+			<key>hash2</key>
+			<data>
+			HRQe7dHZw0ZPQz7cM8iVFx+CjjpXa0y6FAgm23O9DEE=
+			</data>
+		</dict>
+		<key>TeamCircleSDK.bundle/newpost_tag_dark@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			plp0vAbO5GnxwmkWZ8JoOOCNmzQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			zOYa1YSgGiXKKsPIBYGNXdLBVPND/Gcm8tP0Bj0cQro=
+			</data>
+		</dict>
+		<key>TeamCircleSDK.bundle/newpost_tag_dark@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9M0VwNzyzxBI7kQKNXufylPgcfE=
+			</data>
+			<key>hash2</key>
+			<data>
+			81ci0wkEPMeAAX6ewXwN5D4mkPVZdbHyybvRaHOX8ZA=
+			</data>
+		</dict>
+		<key>TeamCircleSDK.bundle/newpost_tag_light.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			40AQewzB5XMHhd90be6ddg/IL7c=
+			</data>
+			<key>hash2</key>
+			<data>
+			B8MEo4IcQewtvn0bACBQqufZlS7HwIoJNstLNMjmD2c=
+			</data>
+		</dict>
+		<key>TeamCircleSDK.bundle/newpost_tag_light@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mhuY92YaFp9a7tJSSwnZyDoDm9c=
+			</data>
+			<key>hash2</key>
+			<data>
+			7ckECm2LH776e09lL38kfaocHOSvZeg+vjW12M3rxOY=
+			</data>
+		</dict>
+		<key>TeamCircleSDK.bundle/newpost_tag_light@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y8j1Ev+BpBfAXfPoW9OX4w/jv9U=
+			</data>
+			<key>hash2</key>
+			<data>
+			fL0xF8myTtDAwktAjBiJEkpsfdquQF8O44Bebkao0ZE=
+			</data>
+		</dict>
 		<key>TeamCircleSDK.bundle/notification_dark.png</key>
 		<dict>
 			<key>hash</key>
@@ -17799,11 +17945,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ag2cK8igVPY1V0Xs/WYIN8M+y5A=
+			LsNw0VsR0cMET0W2aa9LD3M/Sns=
 			</data>
 			<key>hash2</key>
 			<data>
-			Aj7gsDkigCpcEJYyLXKCGnDtyMP1MfyV1vr7dHlBsBs=
+			Md9BOX79yilaj45K2w0je6u5iRadiwfVfagbQhZSCxE=
 			</data>
 			<key>optional</key>
 			<true/>

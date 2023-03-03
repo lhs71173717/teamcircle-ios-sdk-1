@@ -630,7 +630,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TCManager * 
 @property (nonatomic, readonly, strong) UIFont * _Nonnull systemText2Front;
 @property (nonatomic, readonly, strong) UIFont * _Nonnull systemText3Front;
 @property (nonatomic, readonly, strong) UIFont * _Nonnull systemText4Front;
-@property (nonatomic, readonly, strong) UIFont * _Nonnull feedOfficialFont;
+@property (nonatomic, readonly, strong) UIFont * _Nonnull userTagsFont;
 @property (nonatomic, readonly, strong) UIFont * _Nonnull chatViewTitleFront;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull systemTextColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull systemText2Color;
@@ -638,8 +638,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TCManager * 
 @property (nonatomic, readonly, strong) UIColor * _Nonnull systemBackgroundColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull searchBoxBgColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull systemSeparatorColor;
-@property (nonatomic, readonly, strong) UIColor * _Nonnull feedOfficialBgColor;
-@property (nonatomic, readonly, strong) UIColor * _Nonnull feedOfficialColor;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull userTagsBgColor;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull userTagsColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull systemBackgroundEffectColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull msgSendBGColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull msgRecvBGColor;
