@@ -61,6 +61,7 @@ pod 'EMVoiceConvert'
 pod 'MJRefresh'
 pod 'FMDB'
 pod 'AWSS3'
+pod 'youtube-ios-player-helper'
 ```
 
 ### Step 2 Xcode Settings
